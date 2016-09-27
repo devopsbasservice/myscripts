@@ -35,7 +35,7 @@ wget https://raw.githubusercontent.com/$4/$branch/Dockerfile
 wget https://raw.githubusercontent.com/$4/$branch/job.yaml
 
 # change repo to push into dockerhub
-username="52.5.114.230:8082/"
+username="devopsbasservice/"
 a="$username$repo"
 image_id="$a:$commit_id"
 echo "New Image ID"  $image_id
@@ -79,5 +79,5 @@ sed -e 's,<image>,'"$image_id"',;s,<tagid>,'"$commit_id"',' /home/ubuntu/goscrip
 docker rmi -f $prev_img_id
 
 # POST data to marathon
-curl -X POST 50.17.36.28:8080/v2/apps -d @$file -H "Content-type: application/json"
+curl -X POST $SCALR_EXTERNAL_IP:8080/v2/apps -d @$file -H "Content-type: application/json"
 

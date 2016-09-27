@@ -30,7 +30,6 @@ fullbranch="$1"
 echo "This is the Fullbranch name" $fullbranch
 branch="$(echo $fullbranch | cut -c 12-)"
 echo "This is the short branch" $branch
-#https://raw.githubusercontent.com/devopsbasservice/spring-petclinic/venkatesh/job.yaml
 wget https://raw.githubusercontent.com/$4/$branch/Dockerfile
 wget https://raw.githubusercontent.com/$4/$branch/job.yaml
 

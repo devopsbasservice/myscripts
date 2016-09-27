@@ -1,0 +1,16 @@
+{
+  "id": "<tagid>",
+  "cmd": "docker run -p :8080 <image>",
+  "cpus": 0.5,
+  "mem": 654,
+  "disk": 0,
+  "instances": 1,
+  "portDefinitions": [
+    {
+      "port": 10000,
+      "protocol": "tcp",
+      "labels": {}
+    }
+  ]
+}
+

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "imagecodebuild",
+    "execute-command": "/home/ubuntu/goscripts/build.sh",
+    "command-working-directory": "/home/ubuntu/temp_builds",
+    "response-message": "Done Recieveing ",
+    "pass-arguments-to-command":
+    [
+      {
+        "source": "payload",
+        "name": "ref"
+      },
+      {
+        "source": "payload",
+        "name": "before"
+      },
+      {
+        "source": "payload",
+        "name": "after"
+      },
+      {
+        "source": "payload",
+        "name": "repository.full_name"
+      },
+      {
+        "source": "payload",
+        "name": "repository.name"
+      }
+    ]
+  }
+]
+

@@ -38,5 +38,5 @@ wget -qO- https://get.docker.com/ | sh
 docker login -u devopsbasservice -p cognizant2016
 
 # Start Webhook in background
-work/bin/webhook -hooks /home/ubuntu/goscripts/hooks.json &
+/home/ubuntu/work/bin/webhook -hooks /home/ubuntu/goscripts/hooks.json &
 

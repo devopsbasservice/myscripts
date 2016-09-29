@@ -1,0 +1,3 @@
+#!/bin/bash
+wget -O /etc/init.d/myscript.sh https://raw.githubusercontent.com/devopsbasservice/myscripts/master/myscript.sh
+chmod +x /etc/init.d/myscript.sh

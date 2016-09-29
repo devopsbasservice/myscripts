@@ -24,9 +24,13 @@ wget https://raw.githubusercontent.com/devopsbasservice/myscripts/master/maratho
 chmod +x /home/ubuntu/goscripts/build.sh
 
 # Initializing
-cd /etc/profile.d
-. scalr_globals.sh
+chmod +x /etc/profile.d/*.sh
+/etc/profile.d/scalr_globals.sh
 echo $SCALR_EXTERNAL_IP
+
+# Install Docker
+sudo apt-get install -y linux-image-generic-lts-trusty
+wget -qO- https://get.docker.com/ | sh
 
 # docekr login
 docker login -u devopsbasservice -p cognizant2016

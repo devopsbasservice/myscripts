@@ -3,7 +3,7 @@
 #Installing GO  
 apt-get update
 apt-get -y upgrade
-apt-get install curl wget -y
+apt-get install -y curl wget
 cd /opt/
 curl -O https://storage.googleapis.com/golang/go1.6.linux-amd64.tar.gz
 tar -xvf go1.6.linux-amd64.tar.gz

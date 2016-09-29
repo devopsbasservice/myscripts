@@ -14,7 +14,8 @@ export GOPATH=/home/ubuntu/work
  
 # Installing WebHook
 go get github.com/adnanh/webhook
-sleep 60
+echo "Entering Sleep for 20 Seconds"
+sleep 20
 
 # Installing required files
 mkdir -p /home/ubuntu/temp_builds

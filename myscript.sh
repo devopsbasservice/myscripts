@@ -10,10 +10,11 @@ tar -xvf go1.6.linux-amd64.tar.gz
 mv go /usr/local
 export PATH=$PATH:/usr/local/go/bin
 mkdir -p /home/ubuntu/work
-export GOPATH=$HOME/work
+export GOPATH=/home/ubuntu/work
  
 # Installing WebHook
 go get github.com/adnanh/webhook
+sleep 60
 
 # Installing required files
 mkdir -p /home/ubuntu/temp_builds

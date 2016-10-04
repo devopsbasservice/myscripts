@@ -3,7 +3,7 @@
   "cmd": "docker run -p :8080 <image>",
   "cpus": 0.5,
   "mem": 654,
-  "disk": 650,
+  "disk": 1500,
   "instances": 1,
   "portDefinitions": [
     {

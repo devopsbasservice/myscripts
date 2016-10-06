@@ -11,13 +11,6 @@
       "protocol": "tcp",
       "labels": {}
     }
-  ],
-  "container": {
-    "docker": {
-      "forcePullImage": true,
-      "network": "HOST"
-    },
-    "type": "DOCKER"
-  }
+  ]
 }
 

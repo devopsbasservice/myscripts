@@ -44,6 +44,8 @@ echo "Previous Image ID" $prev_img_id
 
 # Append the commit_id to the job.yaml
 sed -i 's,<appndid>,'"$commit_id"',g' job.yaml
+sed -i 's,<ID>,'"$commit_id"',g' job.yaml
+sed -i 's,<IP>,'"$SCALR_INTERNAL_IP"',g' job.yaml
 
 # get basejenkinsimage from job.yaml
 # Author: Venkatesh

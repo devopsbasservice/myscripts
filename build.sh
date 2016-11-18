@@ -32,6 +32,7 @@ branch="$(echo $fullbranch | cut -c 12-)"
 echo "This is the short branch" $branch
 wget https://raw.githubusercontent.com/$4/$branch/Dockerfile
 wget https://raw.githubusercontent.com/$4/$branch/job.yaml
+wget https://raw.githubusercontent.com/$4/$branch/jenkins.plugins.logstash.LogstashInstallation.xml
 
 # change repo to push into dockerhub
 username="devopsbasservice/"
